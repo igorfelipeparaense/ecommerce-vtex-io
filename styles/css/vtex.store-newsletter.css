@@ -1,0 +1,51 @@
+.newsletterForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nameInputContainer,
+.emailInputContainer{
+    width: 280px;
+    height: 48px;
+    margin: 5px;
+}
+
+.formSubmitContainer--desktop {
+    width: 142px;
+    height: 36px;
+    margin-bottom: 11px;
+}
+
+@media screen and (max-width: 745px) {
+    .newsletterForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .nameInputContainer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 48px;
+    }
+    .emailInputContainer {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 48px;
+    }
+    .formSubmitContainer--mobile :global(.vtex-button){
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 48px;
+        margin-bottom: 11px;
+        margin-left: 0px;
+        text-transform: inherit;
+    }
+}

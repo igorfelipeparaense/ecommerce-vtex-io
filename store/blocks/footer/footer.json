@@ -1,0 +1,207 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "footer-layout.desktop": {
+    "children": [
+      "flex-layout.row#footer"
+    ]
+  },
+  "flex-layout.row#footer": {
+    "children": [
+      "flex-layout.col#footer-1-desktop",
+      "flex-layout.col#footer-2-desktop",
+      "flex-layout.col#footer-3-desktop"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 6,
+      "paddingBottom": 3
+    }
+  },
+
+  "flex-layout.col#footer-1-desktop": {
+    "children": ["rich-text#localizacaoTitle", "rich-text#localizacao"]
+  },
+  "flex-layout.col#footer-2-desktop": {
+    "children": ["rich-text#button1", "rich-text#button2"]
+  },
+  "flex-layout.col#footer-3-desktop": {
+    "children": ["flex-layout.row#copy"],
+    "props": {
+      "blockClass": "footerCopy"
+    }
+  },
+
+  "rich-text#localizacaoTitle": {
+    "props": {
+      "blockClass":"localizacaoTitle",
+      "text": "Localização",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#localizacao": {
+    "props": {
+      "blockClass": "localizacao",
+      "text": "Avenida Andrômeda, 2000. Bloco 6 e 8\n Alphavile SP\n brasil@corebiz.ag\n +55 11 3090 1039",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-8",
+      "textAlignment": "LEFT",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#button1": {
+    "props": {
+      "blockClass": "buttonFooter1",
+      "text": "![Email](assets/mail.png) **ENTRE EM CONTATO**",
+      "textColor": "black",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#button2": {
+    "props": {
+      "blockClass": "buttonFooter2",
+      "text": "![Phone](assets/icon.png) **FALE COM O NOSSO CONSULTOR ONLINE**",
+      "textColor": "black",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#copy": {
+    "children":[
+      "rich-text#corebiz",
+      "rich-text#vtex"
+    ],
+    "props":{
+      "blockClass": "copy"
+    }
+  },
+  "rich-text#corebiz": {
+    "props": {
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Created by \n [![Corebiz](assets/corebiz.png)](http://www.corebiz.ag)",
+      "blockClass": "core"
+    }
+  },
+  "rich-text#vtex": {
+    "props": {
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Powered by \n [![Vtex](assets/Vtex.png)](http://www.vtex.com)",
+      "blockClass": "vtex"
+    }
+  },
+
+
+  "footer-layout.mobile": {
+    "children": [
+      "flex-layout.row#footer-mobile"
+    ]
+  },
+  "flex-layout.row#footer-mobile": {
+    "children": [
+      "flex-layout.col#footer-1-mobile",
+      "flex-layout.col#footer-2-mobile",
+      "flex-layout.col#footer-3-mobile"
+    ],
+    "props": {
+      "blockClass": "menu-row",
+      "paddingTop": 4,
+      "paddingBottom": 4
+    }
+  },
+  "flex-layout.col#footer-1-mobile": {
+    "children": ["rich-text#localizacaoTitleMobile", "rich-text#localizacaoMobile"]
+  },
+  "flex-layout.col#footer-2-mobile": {
+    "children": ["rich-text#button1Mobile", "rich-text#button2Mobile"]
+  },
+  "flex-layout.col#footer-3-mobile": {
+    "children": ["flex-layout.row#copyMobile"],
+    "props": {
+      "blockClass": "footerCopy"
+    }
+  },
+  "rich-text#localizacaoTitleMobile": {
+    "props": {
+      "blockClass":"localizacaoTitle",
+      "text": "Localização",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#localizacaoMobile": {
+    "props": {
+      "blockClass": "localizacaoMobile",
+      "text": "Avenida Andrômeda, 2000. Bloco 6 e 8\n Alphavile SP\n brasil@corebiz.ag\n +55 11 3090 1039",
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-8",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT"
+    }
+  },
+  "rich-text#button1Mobile": {
+    "props": {
+      "blockClass": "buttonFooter1",
+      "text": "![Email](assets/mail.png) **ENTRE EM CONTATO**",
+      "textColor": "black",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+  "rich-text#button2Mobile": {
+    "props": {
+      "blockClass": "buttonFooter2",
+      "text": "![Phone](assets/icon.png) **FALE COM O NOSSO CONSULTOR ONLINE**",
+      "textColor": "black",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "flex-layout.row#copyMobile": {
+    "children":[
+      "rich-text#corebizMobile",
+      "rich-text#vtexMobile"
+    ],
+    "props":{
+      "blockClass": "copy"
+    }
+  },
+  "rich-text#corebizMobile": {
+    "props": {
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Created by \n [![Corebiz](assets/corebiz.png)](http://www.corebiz.ag)",
+      "blockClass": "coreMobile"
+    }
+  },
+  "rich-text#vtexMobile": {
+    "props": {
+      "textColor": "c-on-emphasis",
+      "font": "t-heading-5",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Powered by \n [![Vtex](assets/Vtex.png)](http://www.vtex.com)",
+      "blockClass": "vtexMobile"
+    }
+  }
+}

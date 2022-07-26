@@ -1,0 +1,130 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header-layout.desktop": {
+    "children": [
+      "sticky-layout#4-desktop"
+    ]
+  },
+
+  "sticky-layout#4-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": ["flex-layout.row#4-desktop"]
+  },
+  "flex-layout.row#4-desktop": {
+    "props": {
+      "blockClass": "main-header",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "search-bar",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "search-bar": {
+    "props": {
+      "placeholder": "O que está procurando?"
+    }
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://babadotop.vteximg.com.br/arquivos/logo-corebiz.svg",
+      "width": "174"
+    }
+  },
+  
+  "login": {
+    "props": {
+      "iconLabel": "Minha Conta",
+      "showIconProfile": true
+    }
+  },
+  
+  "header-layout.mobile": {
+    "children": ["sticky-layout#1-mobile"]
+  },
+  "sticky-layout#1-mobile": {
+    "children": ["flex-layout.row#1-mobile", "flex-layout.row#mobileSearchBar"]
+  },
+  "flex-layout.row#1-mobile": {
+    "children": [
+      "drawer",
+      "logo#mobile",
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    }
+  },
+
+  "logo#mobile": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "https://babadotop.vteximg.com.br/arquivos/logo-corebiz.svg",
+      "width": "110"
+    }
+  },
+
+  "flex-layout.row#mobileSearchBar": {
+    "children":[
+      "search-bar"
+    ],
+    "props": {
+      "blockClass": "main-header-searchBar",
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "horizontalAlign": "center"
+    }
+  },
+  "drawer": {
+    "children": [
+      "menu#drawer"
+    ]
+  },
+  
+  "menu#drawer": {
+    "children": [
+      "menu-item#category-clothing"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "menu-item#category-clothing": {
+    "children":[
+      "rich-text#menuDrawer"
+    ]
+  },
+  "rich-text#menuDrawer":{
+    "props":{
+      "text": "Open Drawer"
+    }
+  }
+}

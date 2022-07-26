@@ -1,0 +1,10 @@
+.input:last-child::placeholder {
+    color: #000000;
+}
+
+@media screen and (max-width: 745px) {
+    .input:last-child::placeholder {
+        color: #000000;
+        font-size: 14px;
+    }   
+}
